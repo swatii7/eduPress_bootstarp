@@ -6,7 +6,9 @@
     <title>EduPress</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Montserrat:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link href="./app.css" rel="stylesheet">
@@ -15,16 +17,17 @@
     <header>
        
         <div class="container navWrapper">
-            <nav class="navbar navbar-expand-md">
+            <nav id="navbar_top" class="navbar navbar-expand-md">
                 <div class="container">
-                  <a class="navbar-brand text-white fs-4 fw-bold coName" href="#">EduPress.</a>
+                  <a class="navbar-brand text-white fs-4 fw-bold coName font-montserrat sticky-top" href="#">EduPress.</a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <i class="fa fa-solid fa-bars barIcon"></i>
+                    <!-- <span class="navbar-toggler-icon"></span> -->
                   </button>
                   <div class="collapse navbar-collapse navTabs" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <li class="nav-item dropdown font-lato">
+                            <a class="nav-link px-3" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                               Home
                               <i class="fa fa-solid fa-chevron-down downIcon"></i>
                             </a>
@@ -35,18 +38,18 @@
                               <li><a class="dropdown-item" href="#">Something else here</a></li>
                             </ul>
                           </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                      <li class="nav-item font-lato">
+                        <a class="nav-link  ps-3" href="#">About</a>
                       </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Courses</a>
+                      <li class="nav-item font-lato">
+                        <a class="nav-link  ps-3" href="#">Courses</a>
                       </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Community</a>
+                      <li class="nav-item font-lato">
+                        <a class="nav-link  ps-3" href="#">Community</a>
                       </li>
                       
-                      <li class="nav-item dropdown">
-                        <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <li class="nav-item font-lato dropdown">
+                        <a class="nav-link  ps-3" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Pages
                             <i class="fa fa-solid fa-chevron-down downIcon"></i>
                           </a>
@@ -57,8 +60,8 @@
                           <li><a class="dropdown-item" href="#">Something else here</a></li>
                         </ul>
                       </li>
-                      <li class="nav-item dropdown">
-                        <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <li class="nav-item font-lato dropdown">
+                        <a class="nav-link  ps-3" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                            Blogs
                             <i class="fa fa-solid fa-chevron-down downIcon"></i>
                           </a>
@@ -69,21 +72,23 @@
                           <li><a class="dropdown-item" href="#">Something else here</a></li>
                         </ul>
                       </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                      <li class="nav-item font-lato">
+                        <a class="nav-link  ps-3" href="#">Contact</a>
                       </li>
                     </ul>
-                    <form class="d-flex" role="search">
+                    <form class="d-flex rightnavTabs" role="search">
                         <a href="#" class="bagIcon text-decoration-none">
                             <i class="fa fa-solid fa-briefcase text-white"></i>
                             <sup class="text-white iconBadge">2</sup>
                         </a>
-                        <a href="#" class="search-icon">
+                        <a href="#" class="search-icon text-decoration-none position-relative">
                             <i class="fas fa-search text-white"></i>
-                            <div class="dropSearch">
-                                <div class="input-group mb-3">
-                                    <input type="text" class="form-control" placeholder="Username" aria-label="Username">
-                                    <span class="input-group-text">@</span>
+                            <div class="dropSearch rounded-0">
+                                <div class="input-group seachInput">
+                                    <input type="text" class="form-control rounded-0" placeholder="Search here..." aria-label="Search here">
+                                    <span class="input-group-text searchIconDiv rounded-0 list-none">
+                                      <i class="fas fa-search text-white"></i>
+                                    </span>
                                   </div>
                             </div>
                         </a>
@@ -97,12 +102,160 @@
     </header>
 
     <main>
+      <!-- hero section -->
         <section class="hero-banner">
+          <div class="container mx-auto">
+            <div class="row">
+              <div class="col-lg-6 col-md-12 col-sm-12 messageContainer">
+                <div>
+                  <h4 class="text-white font-montserrat">A Powerful Course
+                    <br>
+                    Website Template.</h4>
+                    <p class="fw-normal font-lato">
+                      We're among one of the best Education Bootstrap template on the Envato marketplace to build a powerful online university websites. The team family is a small collection of designers and who have one thing in common - we all love coding.
+                    </p>
+                </div>
+                <div class="viewCourseBtnWrapper">
+                  <button class="text-uppercase btn-lg btn courseDemoButton text-white rounded-0 font-montserrat">view our courses</button>
+                </div>
+              </div>
+            </div>
+           
 
+          </div>
+        </section>
+
+        <!-- courses detail -->
+        <section class="bg-white coursesDetailsWrapper">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card">
+                  <img src="./images/course1_img.png" class="card-img-top" alt="...">
+                  <div class="card-body p-2">
+                    <h3 class="card-title fw-bold lh-1">Best Multi-Tier Courses</h3>
+                    <hr class="cardHr">
+                    <p class="card-text font-lato">EduPress is a powerful Education HTML template that comes with an easy template option interface.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card">
+                  <img src="./images/course2_img.png" class="card-img-top" alt="...">
+                  <div class="card-body p-2">
+                    <h3 class="card-title fw-bold lh-1">Buy / Sell Courses</h3>
+                    <hr>
+                    <p class="card-text font-lato">If you are looking premium quality multi vendor learning template for your next website, the EduPress ideal for you!</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card">
+                  <img src="./images/course3_img.png" class="card-img-top" alt="...">
+                  <div class="card-body p-2">
+                    <h3 class="card-title fw-bold lh-1">Multi Purpose Dashboard</h3>
+                    <hr>
+                    <p class="card-text font-lato">With our awesome dashboard panels, you can showcase all your personal details, messages, social profiles.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card">
+                  <img src="./images/course4-img.png" class="card-img-top" alt="...">
+                  <div class="card-body p-2">
+                    <h3 class="card-title fw-bold lh-1">Easy to Use Video Panels</h3>
+                    <hr>
+                    <p class="card-text font-lato">We build an amazing HTML5 video player for video courses. Also you can use any embed codes from Youtube or Vimeo.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- multi-purpose learning system section -->
+        <section class="learningSystemWrapper position-relative overflow-hidden">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6 col-sm-12">
+                <div class="mb-3">
+                  <h2 class="text-uppercase learningHeading font-montserrat">
+                    Multi Purpose Learning System
+                  </h2>
+                  <hr class="customHrLine">
+                  <p class="font-montserrat learningPara fst-italic fw-normal">
+                    One template hundreds of beautiful section elements! Don't forget to check our awesome video documentation!
+                  </p>
+                </div>
+                <div class="featureList">
+                  <p class="font-lato learningPara">
+                    Easily change/switch/swap every placeholder inside every image on Sedna with the included Sketch files. You’ll have this template customised to suit your business in no time!
+                  </p>
+                  <p class="learningPara font-lato">
+                    Nam vehicula malesuada lectus, interdum fringilla nibh. Duis aliquam vitae metus a pharetra. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fermentum augue..
+                  </p>
+                  <div class="row">
+                    <div class="col-lg-6 col-sm-12">
+                      <ul class="listWrapper">
+                          <li class="d-flex align-items-center font-lato"><div class="circleIcon"></div>learning Management System</li>
+                          <li class="d-flex align-items-center font-lato"><div class="circleIcon"></div> Suitable for Onepage Courses</li>
+                          <li class="d-flex align-items-center font-lato"><div class="circleIcon"></div> Use on University Websites</li>
+                          <li class="d-flex align-items-center font-lato"><div class="circleIcon"></div> Build an Awesome Community</li>
+                      </ul>
+                    </div>
+                    <div class="col-lg-6 col-sm-12">
+                      <ul class="listWrapper">
+                        <li class="d-flex align-items-center font-lato"><div class="circleIcon"></div>Simple & Clean Code</li>
+                        <li class="d-flex align-items-center font-lato"><div class="circleIcon"></div>Modern Browsers Compatible</li>
+                        <li class="d-flex align-items-center font-lato"><div class="circleIcon"></div>Beautiful CSS3 Animations</li>
+                        <li class="d-flex align-items-center font-lato"><div class="circleIcon"></div>Beginner Friendly Documentation</li>
+                    </ul>
+                    </div>
+                  </div>
+                  <div class="browseButton">
+                    <button class="text-uppercase btn-lg btn courseDemoButton text-white rounded-0 font-montserrat">Browse All Courses
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-right ms-2"><path d="M18 8L22 12L18 16"/><path d="M2 12H22"/></svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            
+          </div>
+          <div class="macbookImgWrapper">
+            <!-- <img src="./images/macbook.png" /> -->
+          </div>
+        </section>
+
+        <!-- education template section -->
+        <section class="educationTemplateWrapper">
+          <div class="container">
+            <div class="text-center">
+              <h2 class="text-uppercase font-montserrat">One of the Best Education Template on the Market</h2>
+              <hr class="customHrLine customHr">
+            </div>
+          </div>
         </section>
        
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function(){
+  window.addEventListener('scroll', function() {
+      if (window.scrollY > 50) {
+        document.getElementById('navbar_top').classList.add('fixed-top');
+        // add padding top to show content behind navbar
+        navbar_height = document.querySelector('.navbar').offsetHeight;
+        document.body.style.paddingTop = navbar_height + 'px';
+      } else {
+        document.getElementById('navbar_top').classList.remove('fixed-top');
+         // remove padding top from body
+        document.body.style.paddingTop = '0';
+      } 
+  });
+}); 
+    </script>
   </body>
 </html>
