@@ -268,6 +268,190 @@ padding: 60px 0px;
     font-weight: normal;
 }
 
+.educationTemplateWrapper p{
+    font-size: 14px;
+    color: #555555;
+    line-height: 1.8;
+    margin-bottom: 50px;
+}
+
+.videoWrapper{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.banner{
+   position: absolute;
+    right: -10px;
+    top: -10px;
+    background-color: #e74c3c;
+    border-radius: 50%;
+    color: #fff;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 60px;
+
+}
+
+.video-container {
+    position: relative;
+}
+
+
+.videoImg {
+    width: 100%;
+    cursor: pointer;
+    max-width: 360px;
+    height: 201px;
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: 80px;
+    background-color: transparent;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 3px solid #fff;
+}
+
+.play-button:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-40%, -50%);
+    border-style: solid;
+    border-width: 20px 0 20px 35px;
+    border-color: transparent transparent transparent white;
+}
+
+#video {
+    display: none;
+    max-width: 360px;
+    height: 201px;
+}
+
+.videoTitle{
+    margin: 20px 0px 10px;
+}
+
+.videoTitle a:hover{
+    text-decoration: underline !important;
+    color: #e74c3c !important;
+}
+
+.rating i{
+    color: #f5cd0c;
+    font-size: 14px;
+}
+
+.unfilled{
+    color: white !important;
+    /* border: 1px solid #f5cd0c; */
+}
+
+.priceButton{
+    color: #e74c3c;
+    height: 30px;
+    border: 2px solid #ededed;
+    padding: 8px 20px;
+    font-size: 12px;
+}
+
+/* reviews section css */
+.reviewsWrapper{
+    background-color: #ecf0f1;
+    padding: 60px 0px;
+}
+
+.reviewHeading{
+    margin-bottom: 50px;
+}
+
+.reviewColOne{
+    border-bottom: 1px dashed #d9d9d9;
+    border-right: 1px dashed #d9d9d9;
+}
+
+.reviewColTwo{
+    border-bottom: 1px dashed #d9d9d9;
+}
+
+.reviewColThree{
+    border-right: 1px dashed #d9d9d9;
+}
+
+
+.reviewHeading h2{
+    font-size: 21px;
+    line-height: 1.1em;
+    color: #27293d;
+    font-weight: normal;
+}
+
+.studentReview{
+    padding: 30px;
+}
+
+.reviewerImg img{
+    max-width: 75px;
+    border-radius: 50%;
+    margin: 10px 20px 20px 0px;
+}
+
+.reviewerDetail p{
+    color: #555555;
+    font-size: 14px;
+    padding-right: 20px;
+    margin-bottom: 10px;
+    line-height: 1.70;
+}
+
+.reviewerDetail h4{
+    color: #555555;
+    font-weight: normal;
+}
+
+.reviewerDetail a{
+    color: #e74c3c;
+}
+
+.reviewerDetail a:hover{
+    text-decoration: underline !important;
+}
+
+.designation{
+    color: #555555;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+/* service section css */
+.serviceWrapper{
+    padding: 60px 0px;
+}
+
+.leftImgWrapper{
+    position: absolute;
+    bottom: -390px;
+    /* right: 68%; */
+}
+
+.serviceCard svg{
+    color: #e74c3c !important;
+}
+
+
 /* media query for large screen device */
 
 @media (min-width:1200px){
@@ -325,6 +509,21 @@ padding: 60px 0px;
         display: none;
     }
 
+    .videoImg {
+        max-width: 738px;
+        height: 407px;
+    }
+
+    #video {
+        max-width: 738px;
+        height: 407px;
+    }
+    
+    .videoTitle{
+        margin: 20px 0px 30px !important;
+    }
+
+    
 }
 
 /* media query for small screen device */
@@ -346,5 +545,27 @@ padding: 60px 0px;
         font-size: 21px;
     }
 
+    .videoImg {
+        max-width: 345px;
+        height: 190px;
+    }
+
+    #video {
+        max-width: 345px;
+        height: 190px;
+    }
+
+.banner{
+        display: none;
+    }
+
+    .studentReview{
+        display: block !important;
+    }
+
+    .reviewerDetail p{
+        padding-right: 0px !important;
+        font-size: 15px !important;
+    }
 
 }
