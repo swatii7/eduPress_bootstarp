@@ -1,5 +1,17 @@
+::selection{
+    background-color: #e74c3c !important;
+    color: #fff !important;
+}
 .font-montserrat{
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.bg-gray{
+    background-color: #ecf0f1 !important;
+}
+
+.p-60{
+    padding: 60px 0px;
 }
 
 .font-lato{
@@ -161,10 +173,6 @@ header{
     margin: 20px 0px;
 }
 
-.coursesDetailsWrapper{
-    padding: 60px 0px;
-}
-
 .card{
     border: none !important;
 }
@@ -189,10 +197,6 @@ header{
 }
 /* course detail section css end  */
  /* multi-purpose learning system section css  */
-.learningSystemWrapper{
-    background-color: #ecf0f1;
-    padding: 60px 0px;
-}
 
 .macbookImgWrapper{
     position: absolute;
@@ -254,9 +258,7 @@ color: #555555;
 }
 
 /* education template section css */
-.educationTemplateWrapper{
-padding: 60px 0px;
-}
+
 
 .customHr{
     margin: 30px auto 25px !important;
@@ -371,7 +373,7 @@ padding: 60px 0px;
 /* reviews section css */
 .reviewsWrapper{
     background-color: #ecf0f1;
-    padding: 60px 0px;
+    /* padding: 60px 0px; */
 }
 
 .reviewHeading{
@@ -392,7 +394,7 @@ padding: 60px 0px;
 }
 
 
-.reviewHeading h2{
+.reviewHeading h2, .signUpHeading h2, .blogWrapper h2{
     font-size: 21px;
     line-height: 1.1em;
     color: #27293d;
@@ -437,20 +439,219 @@ padding: 60px 0px;
 }
 
 /* service section css */
-.serviceWrapper{
-    padding: 60px 0px;
-}
 
 .leftImgWrapper{
+    top: 65px;
     position: absolute;
-    bottom: -390px;
-    /* right: 68%; */
+    right: 68%;
 }
 
-.serviceCard svg{
+.iphoneImg{
+    position: absolute;
+    left: 500px;
+    bottom: 129px;
+}
+
+.serviceCard svg, i{
+    color: #e74c3c !important;
+
+}
+
+.serviceCardHeading{
+    font-size: 15px;
+    color: #27293d;
+}
+
+.serviceHrLine{
+    width: 57px;
+}
+
+.serviceCardPara{
+    color: #555555;
+    font-size: 14px;
+}
+
+/* signUp section css */
+
+.signUpHeading{
+    margin-bottom: 100px;
+}
+
+.signUpInput{
+    border: 1px solid #e0e0e5;
+    color: #424753;
+    /* margin: 5px; */
+}
+
+.input-group{
+    height: 50px;
+}
+
+.signUpInput::placeholder{
+    color: #999 !important;
+    font-size: 13px !important;
+    font-weight: normal !important;
+}
+
+.inputWrapper:focus{
+     border: 1px solid #e74c3c !important;
+}
+
+.form-control:focus{
+    border: none !important;
+    box-shadow: none ;
+}
+
+/* blog section style */
+
+.blogWrapper p{
+    color: #555555;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.blogImgWrapper img{
+    max-width: 360px;
+    width: 100%;
+}
+
+.blogCommentsWrapper{
+    margin: 20px 0px 15px;
+}
+
+.blogCommentsWrapper a{
+    font-size: 12px;
+    color: #888888 !important;
+    padding-right: 7px;
+}
+
+.blogCommentsWrapper a:hover{
+    text-decoration: underline !important;
     color: #e74c3c !important;
 }
 
+.blogCommentsWrapper i{
+    margin-right: 5px;
+}
+
+.blogTitle{
+    color: #27293d !important;
+}
+
+.blogTitle:hover{
+    color: #e74c3c !important;
+    text-decoration: underline !important;
+}
+
+.blogDetail p{
+    color: #555555;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.readMoreLink{
+    color: #27293d;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.readMoreLink:hover{
+    color: #e74c3c !important;
+}
+
+
+/* footer style */
+
+footer{
+    background-color: #27293d !important;
+    padding: 45px 0px;
+}
+
+.copyrights li{
+    margin: 10px 0px;
+    list-style: none;
+}
+
+.mediaIcon{
+    color: rgba(255, 255, 255, 0.5) !important;
+    font-weight: 400;
+
+}
+
+.footerLink{
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.5) !important;
+    
+}
+
+
+.footerLink:hover{
+    color: #e74c3c !important;
+    text-decoration: underline !important;
+}
+
+.newsletter{
+    padding-top: 16px;
+}
+
+.newsletter p{
+    color: rgba(255, 255, 255, 0.5) !important;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.newsletter .form input{
+    font-size: 11px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: transparent;
+    padding: 12px 12px;
+    width: 100%;
+    color: rgba(255, 255, 255, 0.3) !important;
+    margin-bottom: 10px;
+}
+
+.form input:focus-visible{
+border: 1px solid #e74c3c !important;
+outline: #e74c3c;
+}
+
+.subscribeBtn{
+    padding: 10px 15px !important;
+}
+
+.footerRow{
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 20px
+}
+
+.copyright{
+    color: rgba(255, 255, 255, 0.5) !important;
+    margin-top: 5px;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.copyright a{
+    color: #e74c3c;
+}
+
+.copyright a:hover{
+    text-decoration: underline !important;
+}
+
+.upIcon{
+background-color: rgba(255, 255, 255, 0.1);
+padding: 10px 0px;
+}
+
+.upIcon i{
+    color: rgba(255, 255, 255, 0.5) !important;
+    font-size: 15px;
+    height: 35px;
+    width: 35px;
+    text-align: center;
+}
 
 /* media query for large screen device */
 
